@@ -1,0 +1,8 @@
+.App {
+    text-align: center;
+}
+ul > li {
+    border: 1px solid rgb(114, 235, 16);
+    margin:5px;
+    padding:10px;
+}
