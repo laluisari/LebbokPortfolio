@@ -1,5 +1,46 @@
-.App {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+:root{
+    --primary-white : #fff;
+    --primary-orange : rgb(255, 153, 0);
+    --primary-dark : rgb(255,255,255,0);
+}
+body {
+    font-family:"Roboto" sans-serif;
+}
+
+/* navbar */
+.logo{
+    width: 16.25rem;
+   
+}
+
+/* menu link */
+nav a.nav-link{
+    /* font-weight: 500; */
+    letter-spacing: 0.0625rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+.navbar-nav li a {
+ margin-left: 0.75rem;
+ margin-right: 0.75rem;
+ color: var(--primary-white )!important;
+ border-top: 0.1875rem solid var(--primary-dark);
+ 
+}
+
+.navbar-brand{
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 6rem !important;
+}
+.navbar-nav> li> a:focus-within{
+    border-top: 0.1875rem solid var(--primary-orange);
+}
+.navbar-nav> li> a:hover{
+    border-top: 0.1875rem solid var(--primary-orange);
 }
