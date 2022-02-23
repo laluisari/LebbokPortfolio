@@ -1,18 +1,23 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Roboto:ital,wght@1,300&family=Ubuntu:ital@0;1&display=swap');
 :root{
     --primary-white : #fff;
-    --primary-orange : rgb(255, 153, 0);
-    --primary-dark : rgb(255,255,255,0);
+    --primary-orange : #f9ab00; 
+    --primary-dark : #212529;
+    --primary-red : #ef4035;
+    --primary-hover-red: #f53301; 
+    --primary-tes : #474539;  
 }
 body {
     font-family:"Roboto" sans-serif;
 }
 
-/* navbar */
+/* ============================ Navbar ================================== */
 .logo{
     width: 16.25rem;
    
+}
+.navbar{
+    z-index: 2;
 }
 
 /* menu link */
@@ -38,9 +43,164 @@ nav ul li {
     padding: 0 !important;
     height: 6rem !important;
 }
+@media(max-width: 768px){
+    .navbar-brand{
+        max-width: 6.25rem;
+    }
+    .logo{
+        max-width: 7.25rem;
+    }
+}
+
+
 .navbar-nav> li> a:focus-within{
     border-top: 0.1875rem solid var(--primary-orange);
 }
 .navbar-nav> li> a:hover{
     border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/* ============================ Header ================================== */
+.header-wrapper{
+    position: relative;
+    background: url(backgorund-gili.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+.main-info{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0; right: 0; bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-family:"Roboto Condesed" sans-serif;
+    z-index: 1;
+}
+
+.main-info h2{
+    color: var(--primary-orange);
+    text-transform: uppercase;
+    text-shadow: 2px 2px var(--primary-tes);
+}
+.main-info p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media(max-width: 768px){
+    .main-info h1{
+        font-size: 1.5rem !important;
+    }
+}
+/* ============================ Typed script ================================== */
+.typed-text{
+    font-size: 1.5rem;
+    color: var(--primary-white);
+    text-transform: uppercase;
+    font-family: "Roboto mono";
+}
+@media(max-width: 768px){
+    .typed-text{
+        font-size: 1.3rem !important;
+    }
+}
+
+/* ============================ header main offer ================================== */
+.btn-main-offer{
+border: 1px solid var(--primary-red);
+text-transform: uppercase;
+border-radius: 0;
+padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+color: var(--primary-white);
+margin: 2rem;
+}
+
+.btn-main-offer:hover{
+    text-decoration: none;
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    transition: 0.7s ease-in-out;
+    
+}
+/* ============================ ts-Particles ===================== */
+#tsparticles {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+@media(max-width: 768px){
+    .particles-canvas{
+        display: none;
+    }
+}
+
+/* ============================ slider ===================== */
+.slider {
+    margin-top: -1rem;
+    position: relative;
+    height: 90vh;
+    z-index: 2; 
+}
+
+#gambar{
+    height: 90vh;
+}
+
+/* ============================ Info ===================== */
+.info{
+   
+    
+    background-color: var(--primary-white);
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    z-index: 1;
+}
+#alasan{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.info-isi{
+    margin-top: 5.25rem ;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-family:"karla", sans-serif;
+    
+    
+}
+.info-isi img{
+    width: 10.25rem;
+}
+
+/* ============================ Card main ===================== */
+.keunggulan{
+    padding-top: 3rem;
+    font-family:"karla", sans-serif;
+    font-weight: 700;
+    
+}
+
+.Cards{
+    margin-top: 5rem;
+    display: inline-block;
+}
+
+/* ============================ Footer ===================== */
+.main-footer{
+    margin-top: 5rem;
+    background-color: var(--primary-dark);
+    height: 40vh;
+    color: var(--primary-white);
+}
+
+#list{
+    padding-top: 2rem;
+    margin-left: 5rem;
 }
